@@ -194,7 +194,8 @@ class _CircularSliderState extends State<CircularSliderPaint> {
       if (radiansWasModuloed(end, prevEnd)) {
         var lapIncrement = end < prevEnd ? 1 : -1;
         var newLaps = laps + lapIncrement;
-        return newLaps < 0 ? 0 : newLaps;
+        return newLaps;
+        // return newLaps < 0 ? 0 : newLaps;
       }
     }
     return laps;
@@ -214,7 +215,8 @@ class _CircularSliderState extends State<CircularSliderPaint> {
         var lapIncrement =
             newSlidingState == SlidingState.endIsBiggerThanStart ? 1 : -1;
         var newLaps = laps + lapIncrement;
-        return newLaps < 0 ? 0 : newLaps;
+        return newLaps;
+        // return newLaps < 0 ? 0 : newLaps;
       }
     }
     return laps;
